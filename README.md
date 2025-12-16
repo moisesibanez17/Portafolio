@@ -1,4 +1,4 @@
-# 🎨 Portafolio de Moisés
+# Portafolio
 
 Portafolio personal profesional con diseño moderno y responsive.
 
