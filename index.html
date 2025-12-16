@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Portafolio de Moisés</title>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<header>
+		<div class="container nav-wrap">
+			<div class="brand"><div class="logo">M</div><div class="name">Moisés</div></div>
+			<button class="nav-toggle" aria-label="Abrir menú">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</button>
+			<nav>
+				<ul>
+					<li><a href="#inicio" data-i18n="nav-inicio">Inicio</a></li>
+					<li><a href="#sobre-mi" data-i18n="nav-sobre-mi">Sobre mí</a></li>
+					<li><a href="#proyectos" data-i18n="nav-proyectos">Proyectos</a></li>
+					<li><a href="#experiencia" data-i18n="nav-experiencia">Experiencia</a></li>
+					<li><a href="#cv" data-i18n="nav-cv">CV</a></li>
+					<li><a href="#contacto" data-i18n="nav-contacto">Contacto</a></li>
+				</ul>
+			</nav>
+			<div class="language-toggle">
+				<button id="lang-toggle" aria-label="Cambiar idioma">
+					<span class="lang-option" data-lang="es">ES</span>
+					<span class="lang-separator">|</span>
+					<span class="lang-option active" data-lang="en">EN</span>
+				</button>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<section class="hero" id="inicio">
+			<div class="container">
+				<div class="hero-inner">
+					<div class="hero-left">
+						<img src="assets/images/avatar.jpg" alt="Moises" class="avatar-img" onerror="this.style.opacity=.12; this.alt='Avatar'">
+					</div>
+					<div class="hero-right">
+						<h1><span data-i18n="hero-greeting">Hola, soy</span> <span class="accent">Moisés</span></h1>
+						<p class="subtitle" data-i18n="hero-subtitle">Ingeniero en Computación y Desarrollador.</p>
+						<p class="lead" data-i18n="hero-lead">Construyo productos digitales útiles y sencillos de usar. Me interesa mejorar la experiencia del usuario a través de buen código y diseño accesible.</p>
+						<div class="hero-actions">
+							<a class="btn primary" href="https://github.com/moisesibanez17?tab=repositories" data-i18n="btn-projects">Ver proyectos</a>
+							<a class="btn outline" href="mailto:moisesibanez17@gmail.com" data-i18n="btn-contact">Contáctame</a>
+						</div>
+						<div class="hero-socials">
+							<a href="https://github.com/moisesibanez17" aria-label="GitHub" class="social"><i class="fab fa-github"></i> GitHub</a>
+							<a href="https://www.linkedin.com/in/moisesibanez17" aria-label="LinkedIn" class="social"><i class="fab fa-linkedin"></i> LinkedIn</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="sobre-mi" class="section-white">
+			<div class="container grid-2">
+				<div>
+					<h2 data-i18n="about-title">Sobre mí</h2>
+					<p class="lead" data-i18n="about-lead">Estudiante de Ingeniería en Computación con experiencia práctica en soporte de TI avanzado, automatización con scripts y desarrollo web</p>
+					<ul class="bullets">
+						<li data-i18n="about-bullet-1">Proporcioné soporte avanzado y resolución de problemas de hardware, software y conectividad</li>
+						<li data-i18n="about-bullet-2">Creación de scripts de automatización utilizando PowerShell, Python y Batch para optimizar operaciones y mejorar la eficiencia del equipo</li>
+						<li data-i18n="about-bullet-3">Administré y mantuve el entorno Microsoft 365/Azure, incluyendo aprovisionamiento de usuarios y aplicación de políticas de seguridad</li>
+					</ul>
+				</div>
+				<aside>
+					<h3 data-i18n="skills-title">Habilidades</h3>
+					<div class="chips">
+						<span>HTML</span><span>CSS</span><span>JavaScript</span><span>Python</span><span>SQL</span><span>Java</span>
+					</div>
+					<h3 style="margin-top:18px" data-i18n="tools-title">Herramientas</h3>
+					<div class="chips">
+						<span>Git</span><span>Docker</span><span>REST APIs</span><span>Postman</span>
+					</div>
+				</aside>
+			</div>
+		</section>
+
+		<section id="proyectos">
+			<div class="container">
+				<h2 data-i18n="projects-title">Proyectos</h2>
+				<div class="projects-grid">
+					<article class="card">
+						<h3 data-i18n="project-1-title">Extractor de datos</h3>
+						<p data-i18n="project-1-desc">Extrae metadatos del repositorio institucional de la Universidad Catolica de Bogota para su analisis</p>
+						<div class="chips" style="margin-bottom: 16px;">
+							<span>REST API</span><span>Flask</span><span>Python</span>
+						</div>
+						<div class="card-actions"><a href="https://extractor-de-datos-fqrsjnib8-moisesibanez17s-projects.vercel.app" class="btn-small" data-i18n="btn-demo">Demo</a><a href="https://github.com/moisesibanez17/Extractor-de-Datos" class="btn-small" data-i18n="btn-code">Código</a></div>
+					</article>
+					<article class="card">
+						<h3 data-i18n="project-2-title">Beneficios Estudiantiles UDG</h3>
+						<p data-i18n="project-2-desc">Pagina web con los beneficios para los estudiantes de la Universidad de Guadalajara</p>
+						<div class="chips" style="margin-bottom: 16px;">
+							<span>HTML</span><span>CSS</span><span>JavaScript</span>
+						</div>
+						<div class="card-actions"><a href="https://beneficios.diferente.page/" class="btn-small" data-i18n="btn-demo">Demo</a><a href="https://github.com/moisesibanez17/UDG-Software-Beneficios" class="btn-small" data-i18n="btn-code">Código</a></div>
+					</article>
+					<article class="card">
+						<h3 data-i18n="project-3-title">TecnoShop</h3>
+						<p data-i18n="project-3-desc">Pagina web para venta de productos tecnológicos</p>
+						<div class="chips" style="margin-bottom: 16px;">
+							<span>HTML</span><span>CSS</span><span>PHP</span><span>SQL</span>
+						</div>
+						<div class="card-actions"><a href="https://tecnoshop-bsto.onrender.com" class="btn-small" data-i18n="btn-demo">Demo</a><a href="https://github.com/moisesibanez17/Tecno-Shop" class="btn-small" data-i18n="btn-code">Código</a></div>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section id="experiencia" class="section-white">
+			<div class="container">
+				<h2 data-i18n="experience-title">Experiencia</h2>
+				<div class="exp-list">
+					<div class="exp-item">
+						<div class="exp-meta" data-i18n="exp-1-date">Septiembre 2025 — Presente</div>
+						<div>
+							<h3 data-i18n="exp-1-company">Grupo ABG</h3>
+							<p data-i18n="exp-1-desc-1">Desarrolle soluciones de scripting avanzado para la resolucion automatizada de fallos recurrentes de Nivel 2, optimizando la gestion de hardware y software crıtico.</p>
+							<p data-i18n="exp-1-desc-2">Implemente y mantuve la infraestructura de usuarios en Microsoft 365/Azure mediante scripts de aprovisionamiento, asegurando el cumplimieto de polıticas de seguridad a traves de la codificacion y automatizacion.</p>
+							<p data-i18n="exp-1-desc-3">Participe en la evaluacion de nuevas herramientas de software y la integracion de APIs para mejorar la conectividad y el flujo de datos.</p>
+						</div>
+					</div>
+					<div class="exp-item">
+						<div class="exp-meta" data-i18n="exp-2-date">Enero 2024 — Mayo 2025</div>
+						<div>
+							<h3 data-i18n="exp-2-company">Grupo Plasencia</h3>
+							<p data-i18n="exp-2-desc-1">Fui el responsable principal del desarrollo de scripts robustos de automatizacion de tareas con PowerShell, Python y Batch, lo que incremento la eficiencia operativa de los procesos crıticos de TI.</p>
+							<p data-i18n="exp-2-desc-2">Codifique rutinas de gestion de identidades y control de permisos en Windows Active Directory para mas de 200 usuarios, utilizando scripting para garantizar la consistencia y la seguridad del acceso.</p>
+							<p data-i18n="exp-2-desc-3">Realice analisis de logs y genere informes automatizados a traves de scripts personalizados, proporcionando soporte tecnico y mejorando la capacidad de respuesta del equipo.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="cv" class="section-white">
+			<div class="container">
+				<h2 data-i18n="cv-title">Currículum Vitae</h2>
+				<p class="lead" data-i18n="cv-lead">Puedes ver y descargar mi CV completo aquí:</p>
+				
+				<!-- Opción 1: Botón de descarga -->
+				<div class="cv-actions">
+					<a id="cv-download" href="assets/cv/cv-es.pdf" download class="btn primary">
+						<i class="fas fa-download"></i> <span data-i18n="btn-download-cv">Descargar CV (PDF)</span>
+					</a>
+					<a id="cv-view" href="assets/cv/cv-es.pdf" target="_blank" class="btn outline">
+						<i class="fas fa-eye"></i> <span data-i18n="btn-view-cv">Ver en nueva pestaña</span>
+					</a>
+				</div>
+
+				<!-- Opción 2: Visualización en iframe -->
+				<div class="cv-viewer">
+					<iframe id="cv-iframe" src="assets/cv/cv-es.pdf" title="Currículum Vitae de Moisés"></iframe>
+				</div>
+			</div>
+		</section>
+
+		<section id="contacto">
+			<div class="container">
+				<h2 data-i18n="contact-title">Contacto</h2>
+				<p class="lead" data-i18n="contact-lead">¿Quieres trabajar conmigo o tienes alguna pregunta? Escríbeme:</p>
+				<a href="mailto:moisesibanez17@gmail.com" class="btn primary">moisesibanez17@gmail.com</a>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="container">
+			<small>&copy; <span id="year"></span> Moisés Ibañez.</small>
+		</div>
+	</footer>
+
+	<script src="js/script.js"></script>
+</body>
+</html>
+                    
