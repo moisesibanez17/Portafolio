@@ -1,0 +1,42 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Hero } from "../components/Hero.tsx";
+import { Projects } from "../components/Projects.tsx";
+import { AboutMe } from "../components/AboutMe.tsx";
+import { Experience } from "../components/Experience.tsx";
+import { CV } from "../components/CV.tsx";
+import { Contact } from "../components/Contact.tsx";
+import Footer from "../components/Footer.astro";
+import Navbar from "../components/Navbar.astro";
+import translations from "../data/translations.json";
+
+import { Reveal } from "../components/ui/Reveal.tsx";
+
+const lang = "es";
+const t = translations[lang];
+---
+
+<Layout title="Portafolio de Moisés Ibáñez" description={t.hero.lead}>
+  <Navbar lang={lang} />
+  <main class="overflow-x-hidden">
+    <Reveal width="100%" client:load>
+      <Hero translations={t.hero} client:load />
+    </Reveal>
+    <Reveal width="100%" client:visible>
+      <AboutMe lang={lang} translations={t.about} client:visible />
+    </Reveal>
+    <Reveal width="100%" client:visible>
+      <Projects lang={lang} client:visible />
+    </Reveal>
+    <Reveal width="100%" client:visible>
+      <Experience lang={lang} client:visible />
+    </Reveal>
+    <Reveal width="100%" client:visible>
+      <CV lang={lang} client:visible />
+    </Reveal>
+    <Reveal width="100%" client:visible>
+      <Contact lang={lang} client:visible />
+    </Reveal>
+  </main>
+  <Footer />
+</Layout>

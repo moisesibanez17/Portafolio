@@ -1,0 +1,38 @@
+{
+    "es": {
+        "nav": {
+            "inicio": "Inicio",
+            "sobre-mi": "Sobre mí",
+            "proyectos": "Proyectos",
+            "experiencia": "Experiencia",
+            "cv": "CV",
+            "contacto": "Contacto"
+        },
+        "hero": {
+            "greeting": "Hola, soy",
+            "name": "Moisés",
+            "subtitle": "Ingeniero en Computación y Desarrollador.",
+            "lead": "Construyo productos digitales útiles y sencillos de usar. Me interesa mejorar la experiencia del usuario a través de buen código y diseño accesible.",
+            "btn-projects": "Ver proyectos",
+            "btn-contact": "Contáctame"
+        }
+    },
+    "en": {
+        "nav": {
+            "inicio": "Home",
+            "sobre-mi": "About Me",
+            "proyectos": "Projects",
+            "experiencia": "Experience",
+            "cv": "CV",
+            "contacto": "Contact"
+        },
+        "hero": {
+            "greeting": "Hi, I'm",
+            "name": "Moisés",
+            "subtitle": "Computer Engineer and Developer.",
+            "lead": "I build useful and user-friendly digital products. I'm interested in improving user experience through good code and accessible design.",
+            "btn-projects": "View projects",
+            "btn-contact": "Contact me"
+        }
+    }
+}

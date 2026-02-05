@@ -1,0 +1,96 @@
+[
+    {
+        "id": 1,
+        "title_es": "Extractor de datos",
+        "title_en": "Data Extractor",
+        "desc_es": "Extrae metadatos del repositorio institucional de la Universidad Catolica de Bogota para su analisis",
+        "desc_en": "Extracts metadata from the institutional repository of the Catholic University of Bogota for analysis",
+        "image": "/images/Extractor.png",
+        "tags": [
+            "REST API",
+            "Flask",
+            "Python"
+        ],
+        "demo": "https://extractor-de-datos-fqrsjnib8-moisesibanez17s-projects.vercel.app",
+        "code": "https://github.com/moisesibanez17/Extractor-de-Datos"
+    },
+    {
+        "id": 2,
+        "title_es": "Planificador UDG",
+        "title_en": "Planner UDG",
+        "desc_es": "Herramienta para estudiantes para organizar horarios, calificar profesores y descubrir beneficios exclusivos.",
+        "desc_en": "Tool for students to organize schedules, rate professors, and discover exclusive benefits.",
+        "image": "/images/planificador.png",
+        "tags": [
+            "FastAPI",
+            "JavaScript",
+            "SQL",
+            "BeutifulSoup"
+        ],
+        "demo": "https://www.planificadorudg.tech/",
+        "code": "https://github.com/moisesibanez17/UDG-Software-Beneficios"
+    },
+    {
+        "id": 3,
+        "title_es": "TecnoShop",
+        "title_en": "TecnoShop",
+        "desc_es": "Pagina web para venta de productos tecnológicos",
+        "desc_en": "Website for selling technological products",
+        "image": "/images/tecnoshop.png",
+        "tags": [
+            "HTML",
+            "CSS",
+            "PHP",
+            "SQL"
+        ],
+        "demo": "https://tecnoshop-bsto.onrender.com",
+        "code": "https://github.com/moisesibanez17/Tecno-Shop"
+    },
+    {
+        "id": 4,
+        "title_es": "Carreras CUCEI",
+        "title_en": "CUCEI Majors",
+        "desc_es": "Plataforma con información de las carreras de la CUCEI, planes de estudio, materias, etc.",
+        "desc_en": "Platform providing information about CUCEI academic programs, study plans, subjects, and more.",
+        "image": "/images/carreras.png",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "demo": "https://carreras.diferente.page/",
+        "code": "https://github.com/moisesibanez17/Carrearas-CUCEI"
+    },
+    {
+        "id": 5,
+        "title_es": "Bienvenida Diferente",
+        "title_en": "Bienvenida Diferente",
+        "desc_es": "Pagina para la comra de boletos para la bienvenida de estudiantes de nuevo ingreso a la CUCEI",
+        "desc_en": "Website for purchasing tickets to the welcome event for new incoming CUCEI students.",
+        "image": "/images/bienvenida.png",
+        "tags": [
+            "SQL",
+            "Node.js",
+            "Mercado Pago",
+            "Tailwind CSS"
+        ],
+        "demo": "https://bienvenida.diferente.page/",
+        "code": "https://github.com/moisesibanez17/Sistema-de-venta-de-tickets"
+    },
+    {
+        "id": 6,
+        "title_es": "VenueTickets",
+        "title_en": "VenueTickets",
+        "desc_es": "Plataforma para la venta de boletos para eventos, conciertos, etc.",
+        "desc_en": "Platform for selling tickets to events, concerts, and more.",
+        "image": "/images/venue.png",
+        "tags": [
+            "SQL",
+            "Node.js",
+            "Stripe",
+            "Express"
+        ],
+        "demo": "https://venuetickets-405c628a83c4.herokuapp.com/",
+        "code": "https://github.com/moisesibanez17/venue"
+    }
+]

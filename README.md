@@ -1,78 +1,43 @@
-# Portafolio
+# Astro Starter Kit: Minimal
 
-Portafolio personal profesional con diseño moderno y responsive.
-
-## 📁 Estructura del Proyecto
-
-```
-portafolio/
-│
-├── index.html              # Página principal
-│
-├── css/
-│   └── style.css          # Estilos del sitio
-│
-├── js/
-│   └── script.js          # Lógica y funcionalidad
-│
-├── assets/
-│   ├── images/
-│   │   └── avatar.jpg     # Foto de perfil
-│   │
-│   └── cv/
-│       ├── cv-es.pdf      # Currículum en español
-│       └── cv-en.pdf      # Currículum en inglés
-│
-└── README.md              # Este archivo
+```sh
+npm create astro@latest -- --template minimal
 ```
 
-## ✨ Características
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-- 🌐 **Multiidioma**: Español e Inglés
-- 📱 **Responsive**: Se adapta a todos los dispositivos
-- 🎨 **Diseño Moderno**: UI limpia y profesional
-- 📄 **CV Integrado**: Visualización y descarga de CV
-- 🚀 **Rendimiento Optimizado**: Código limpio y eficiente
+## 🚀 Project Structure
 
-## 🚀 Instalación
+Inside of your Astro project, you'll see the following folders and files:
 
-1. Coloca tus archivos en la carpeta correspondiente:
-   - Tu foto de perfil en `assets/images/avatar.jpg`
-   - Tu CV en español en `assets/cv/cv-es.pdf`
-   - Tu CV en inglés en `assets/cv/cv-en.pdf`
+```text
+/
+├── public/
+├── src/
+│   └── pages/
+│       └── index.astro
+└── package.json
+```
 
-2. Abre `index.html` en tu navegador
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
-## 🎯 Secciones
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
 
-- **Inicio**: Presentación y enlaces rápidos
-- **Sobre mí**: Experiencia y habilidades
-- **Proyectos**: Portfolio de trabajos realizados
-- **Experiencia**: Historial profesional
-- **CV**: Visualización y descarga del currículum
-- **Contacto**: Información de contacto
+Any static assets, like images, can be placed in the `public/` directory.
 
-## 🛠️ Tecnologías
+## 🧞 Commands
 
-- HTML5
-- CSS3
-- JavaScript (Vanilla)
-- Font Awesome Icons
-- Google Fonts (Poppins, Inter)
+All commands are run from the root of the project, from a terminal:
 
-## 📝 Personalización
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-Para personalizar el contenido, edita:
-- **Textos**: `index.html` y `js/script.js` (translations)
-- **Estilos**: `css/style.css`
-- **Colores**: Variables CSS en `css/style.css` (`:root`)
+## 👀 Want to learn more?
 
-## 📞 Contacto
-
-- **Email**: moisesibanez17@gmail.com
-- **GitHub**: [moisesibanez17](https://github.com/moisesibanez17)
-- **LinkedIn**: [moisesibanez17](https://www.linkedin.com/in/moisesibanez17)
-
----
-
-Desarrollado con ❤️ por Moisés Ibañez
+Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).

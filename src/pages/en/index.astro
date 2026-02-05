@@ -1,0 +1,28 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { Hero } from "../../components/Hero.tsx";
+import { Projects } from "../../components/Projects.tsx";
+import { AboutMe } from "../../components/AboutMe.tsx";
+import { Experience } from "../../components/Experience.tsx";
+import { CV } from "../../components/CV.tsx";
+import { Contact } from "../../components/Contact.tsx";
+import Footer from "../../components/Footer.astro";
+import Navbar from "../../components/Navbar.astro";
+import translations from "../../data/translations.json";
+
+const lang = "en";
+const t = translations[lang];
+---
+
+<Layout title="Moisés Ibáñez Portfolio" description={t.hero.lead}>
+  <Navbar lang={lang} />
+  <main class="overflow-x-hidden">
+    <Hero translations={t.hero} client:load />
+    <AboutMe lang={lang} translations={t.about} client:visible />
+    <Projects lang={lang} client:visible />
+    <Experience lang={lang} client:visible />
+    <CV lang={lang} client:visible />
+    <Contact lang={lang} client:visible />
+  </main>
+  <Footer />
+</Layout>

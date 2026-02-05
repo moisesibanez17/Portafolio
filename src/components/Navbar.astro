@@ -1,0 +1,78 @@
+---
+const { lang } = Astro.props;
+
+const navItems = {
+  es: [
+    { name: "Inicio", href: "#inicio" },
+    { name: "Sobre mí", href: "#sobre-mi" },
+    { name: "Proyectos", href: "#proyectos" },
+    { name: "Experiencia", href: "#experiencia" },
+    { name: "Contacto", href: "#contacto" },
+  ],
+  en: [
+    { name: "Home", href: "#inicio" },
+    { name: "About Me", href: "#sobre-mi" },
+    { name: "Projects", href: "#proyectos" },
+    { name: "Experience", href: "#experiencia" },
+    { name: "Contact", href: "#contacto" },
+  ],
+};
+
+const items = navItems[lang] || navItems.es;
+---
+
+<header
+  id="main-header"
+  class="fixed top-0 left-0 right-0 z-50 flex justify-center p-4 transition-all duration-300"
+>
+  <nav
+    id="nav-container"
+    class="flex items-center gap-6 px-6 py-3 bg-slate-900/60 backdrop-blur-md border border-slate-800 rounded-full shadow-2xl transition-all duration-300"
+  >
+    <div class="flex items-center gap-2 pr-4 border-r border-slate-800">
+      <img src="/icon.png" alt="logo" class="w-8 h-8 rounded-full" />
+    </div>
+
+    <ul class="flex gap-6">
+      {
+        items.map((item) => (
+          <li>
+            <a
+              href={item.href}
+              class="nav-link text-sm font-medium text-slate-300 hover:text-emerald-400 transition-colors relative group"
+            >
+              {item.name}
+              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-emerald-500 transition-all duration-300 group-hover:w-full" />
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+
+    <div class="flex items-center gap-2 ml-4">
+      <a
+        href={lang === "es" ? "/en" : "/"}
+        class="text-xs font-bold px-2 py-1 bg-slate-800 hover:bg-emerald-500/20 hover:text-emerald-400 rounded transition-all border border-slate-700"
+      >
+        {lang === "es" ? "EN" : "ES"}
+      </a>
+    </div>
+  </nav>
+</header>
+
+<script>
+  const header = document.getElementById("main-header");
+  const navContainer = document.getElementById("nav-container");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+      header?.classList.add("p-2");
+      navContainer?.classList.add("bg-slate-950/80", "py-2");
+      navContainer?.classList.remove("bg-slate-900/60", "py-3");
+    } else {
+      header?.classList.remove("p-2");
+      navContainer?.classList.remove("bg-slate-950/80", "py-2");
+      navContainer?.classList.add("bg-slate-900/60", "py-3");
+    }
+  });
+</script>
