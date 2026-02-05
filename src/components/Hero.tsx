@@ -49,23 +49,23 @@ export function Hero({ translations }) {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
                 >
-                    <div className="flex justify-center mb-8">
+                    <div className="flex justify-center mb-6 md:mb-8">
                         <div className="relative group/avatar">
                             <div className="absolute -inset-1 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-full blur opacity-25 group-hover/avatar:opacity-50 transition duration-1000 group-hover/avatar:duration-200"></div>
                             <img
                                 src="/avatar.jpg"
                                 alt="Moisés Ibáñez"
-                                className="relative w-32 h-32 md:w-40 md:h-40 rounded-full border-2 border-emerald-500/50 object-cover shadow-2xl"
+                                className="relative w-28 h-28 md:w-36 md:h-36 lg:w-40 lg:h-40 rounded-full border-2 border-emerald-500/50 object-cover shadow-2xl"
                             />
                         </div>
                     </div>
-                    <h1 className="md:text-7xl text-4xl lg:text-9xl font-bold text-center text-white relative z-20 font-sans tracking-tight">
+                    <h1 className="text-4xl md:text-7xl lg:text-9xl font-bold text-center text-white relative z-20 font-sans tracking-tight leading-tight">
                         {translations.greeting} <span className="bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-cyan-400">
                             {translations.name}
                         </span>
                     </h1>
 
-                    <div className="w-[40rem] h-10 relative mx-auto mt-4">
+                    <div className="hidden md:block w-[40rem] h-10 relative mx-auto mt-4">
                         {/* Gradients */}
                         <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-emerald-500 to-transparent h-[2px] w-3/4 blur-sm" />
                         <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-emerald-500 to-transparent h-px w-3/4" />
@@ -73,20 +73,20 @@ export function Hero({ translations }) {
                         <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-cyan-500 to-transparent h-px w-1/4" />
                     </div>
 
-                    <p className="mt-4 text-slate-400 text-lg md:text-xl max-w-2xl mx-auto font-light leading-relaxed">
+                    <p className="mt-6 md:mt-4 text-slate-400 text-base md:text-xl max-w-2xl mx-auto font-light leading-relaxed px-4">
                         {translations.lead}
                     </p>
 
-                    <div className="mt-8 flex flex-wrap justify-center gap-4">
+                    <div className="mt-8 flex flex-col sm:flex-row justify-center items-center gap-4 px-6 sm:px-0">
                         <a
                             href="#proyectos"
-                            className="px-8 py-3 rounded-full bg-emerald-500 text-slate-950 font-bold hover:bg-emerald-400 transition-all shadow-[0_0_20px_rgba(16,185,129,0.3)]"
+                            className="w-full sm:w-auto px-8 py-3 rounded-full bg-emerald-500 text-slate-950 font-bold hover:bg-emerald-400 transition-all text-center shadow-[0_0_20px_rgba(16,185,129,0.3)] active:scale-95"
                         >
                             {translations["btn-projects"]}
                         </a>
                         <a
                             href="#contacto"
-                            className="px-8 py-3 rounded-full border border-slate-700 text-white font-medium hover:bg-slate-900 transition-all"
+                            className="w-full sm:w-auto px-8 py-3 rounded-full border border-slate-700 text-white font-medium hover:bg-slate-900 transition-all text-center active:scale-95"
                         >
                             {translations["btn-contact"]}
                         </a>
